@@ -3,7 +3,7 @@
 #include <windows.h>
 void main()
 {
-time_t t;   // not a primitive datatype
+time_t t=time(0);   // not a primitive datatype
     time(&t);
     printf("%s", ctime(&t));
     return 0;
